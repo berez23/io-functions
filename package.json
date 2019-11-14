@@ -67,7 +67,7 @@
     "@types/superagent": "^3.8.1",
     "@types/swagger-parser": "^4.0.2",
     "@types/validator": "^9.4.1",
-    "@types/vfile": "^2.2.1",
+    "@types/vfile": "^4.0.0",
     "@types/winston": "^2.3.9",
     "azure-functions-pack": "^1.0.0",
     "danger": "^3.9.0",
