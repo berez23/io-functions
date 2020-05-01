@@ -20,7 +20,9 @@
     "generate:models:public_api_v1": "gen-api-models --api-spec ./api/public_api_v1.yaml --out-dir ./lib/api/definitions --ts-spec-file ./lib/api/public_api_v1.ts",
     "generate:models:admin_api": "gen-api-models --api-spec ./api/admin_api.yaml --out-dir ./lib/api/definitions --ts-spec-file ./lib/api/admin_api.ts",
     "generate:models": "npm-run-all -s generate:models:*",
-    "generate:templates": "gulp generate:templates"
+    "generate:templates": "gulp generate:templates",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "applicationinsights": "^1.0.3",
@@ -51,7 +53,8 @@
     "unified": "^7.0.0",
     "validator": "^10.4.0",
     "vfile": "^3.0.0",
-    "winston": "^3.1.0"
+    "winston": "^3.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
@@ -116,5 +119,6 @@
     "testMatch": [
       "**/__tests__/*.ts"
     ]
-  }
+  },
+  "snyk": true
 }
